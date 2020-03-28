@@ -2,3 +2,241 @@
 @import "vars";
 @import "fonts";
 @import "custom";
+@import "animation";
+
+.header {
+  position: relative;
+  background-color: #000;
+  &__slider {
+  }
+  &__bg {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 13px;
+    padding-left: 131px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      max-width: 1427px;
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/line__bg.png);
+      top: 0;
+      right: 195px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__navigation {
+    width: 131px;
+    min-height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(
+      -185deg,
+      #1c1c1c 0%,
+      #030303 66%,
+      #030303 100%
+    );
+  }
+
+  &__navigation-box {
+    padding: 50px 45px 30px 45px;
+  }
+
+  &__hamburger {
+    width: 36px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 260px;
+    &:hover{
+      .header__hamburger-ellipse{
+        background-color: $color-orange;
+      }
+    }
+  }
+  &__hamburger-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    
+  }
+  &__hamburger-ellipse {
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: .3s all;
+  }
+
+  &__social {
+    font-size: 23px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 145px;
+  }
+
+  &__social-link {
+    transform: rotate(90deg);
+    line-height: 126.36px;
+    transform-origin: center;
+    font-weight: 600;
+    transition: .3s all;
+    &:hover{
+      color: $color-orange;
+    }
+  }
+
+  &__language {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: "DIN NEXTTM ARABIC";
+    text-align: center;
+    font-weight: 300;
+  }
+
+  &__language-btn {
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s all;
+    &:hover{
+      color: $color-orange;
+    }
+    & + & {
+      margin-top: 15px;
+    }
+  }
+
+  &__content {
+    padding-left: 130px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  &__logo {
+    color: $color-orange;
+    text-align: center;
+    margin-bottom: 200px;
+    & > strong {
+      position: relative;
+      font-weight: 700;
+      font-size: 56px;
+      text-transform: uppercase;
+      text-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
+      line-height: 51px;
+      padding-left: 40px;
+      padding-right: 40px;
+      display: block;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        width: 34px;
+        height: 38px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &::before {
+        background-image: url(../images/icons/logo-decor__left.svg);
+        left: 0;
+      }
+      &::after {
+        background-image: url(../images/icons/logo-decor__right.svg);
+        right: 0;
+      }
+    }
+  }
+
+  &__logo-name {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 18px;
+    span {
+      font-weight: 300;
+    }
+    strong {
+      font-family: "baloo_paajiregular";
+    }
+  }
+
+  &__title {
+    font-size: 120px;
+    line-height: 142.87px;
+    font-family: "DIN NEXTTM ARABIC";
+    max-width: 790px;
+    margin-bottom: 220px;
+    font-weight: 900;
+  }
+
+  &__contact-link {
+    position: absolute;
+    right: 54px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 9.74px;
+    color: #fff;
+    font-weight: 600;
+    transform: rotate(90deg);
+    top: 420px;
+    width: 18px;
+    transition: .3s all;
+    &:hover{
+      color: $color-orange;
+    }
+  }
+  &__pagination {
+    display: inline-block;
+  }
+  &__pagination-counter {
+    display: inline-block;
+    padding-left: 83px;
+    strong {
+      font-size: 52px;
+      font-weight: 600;
+      color: #fff;
+    }
+    sup {
+      font-size: 23px;
+      color: #5b5a5a;
+      top: -1em;
+    }
+  }
+  &__pagination-arrow {
+    position: absolute;
+    font-size: 37px;
+    color: #fff;
+    background-color: transparent;
+    z-index: 3;
+    @include icon;
+    top: 992px;
+    transition: .3s all;
+    cursor: pointer;
+    &:hover{
+      color: $color-orange;
+    }
+    &--left {
+      left: 275px;
+      &::before {
+        content: "\f177";
+      }
+      cursor: pointer;
+    }
+    &--right {
+      left: 460px;
+      &::before {
+        content: "\f178";
+      }
+    }
+  }
+}
+@import "media";

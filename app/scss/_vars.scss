@@ -1,0 +1,16 @@
+@mixin position-center__top {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin icon {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+$color-orange: #a99561;

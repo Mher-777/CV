@@ -43,6 +43,9 @@ select,
 option {
   outline: none;
 }
+button{
+  border: none;
+}
 
 img {
   display: block;
@@ -52,6 +55,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
+  color: #a7a7a7;
 }
 
 .slick-slide,
