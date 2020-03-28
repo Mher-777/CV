@@ -346,5 +346,52 @@
     color: $color-gray;
   }
 }
+.expertise {
+  padding: 170px 0 20px;
+  &__title {
+    margin-bottom: 140px;
+  }
+
+  &__title-number {
+    margin-bottom: 40px;
+  }
+
+  &__inner {
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+
+  &__col {
+    max-width: 681px;
+    width: 100%;
+    font-size: 36px;
+  }
+
+  &__col-title {
+    display: flex;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  &__col-title-number {
+    color: $color-orange;
+    margin-right: 10px;
+    font-weight: 700;
+  }
+
+  &__col-title-text {
+    
+  }
+
+  &__col-text {
+    padding-left: 48px;
+    line-height: 50px;
+  }
+}
 
 @import "media";

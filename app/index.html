@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="header__slider">
             <div class="header__bg" style="background-image: url(./images/author.jpg);">
@@ -72,7 +71,7 @@
             <div class="header__bg" style="background-image: url(./images/author.jpg);">
                 <nav class="header__navigation">
                     <div class="header__navigation-box">
-                        <div class="header__hamburger">
+                        <div class="header__hamburger" data-fancybox data-src="#menu">
                             <div class="header__hamburger-row">
                                 <span class="header__hamburger-ellipse"></span>
                                 <span class="header__hamburger-ellipse"></span>
@@ -124,7 +123,7 @@
             <div class="header__bg" style="background-image: url(./images/author.jpg);">
                 <nav class="header__navigation">
                     <div class="header__navigation-box">
-                        <div class="header__hamburger">
+                        <div class="header__hamburger" data-fancybox data-src="#menu">
                             <div class="header__hamburger-row">
                                 <span class="header__hamburger-ellipse"></span>
                                 <span class="header__hamburger-ellipse"></span>
@@ -176,29 +175,9 @@
             </div>
         </div>
     </header>
-    <div class="menu animated zoomIn" id="menu">
-        <ul class="menu__list">
-            <li class="menu__list-item animated fadeInDown menu__list-item--1" data-fancybox-close>
-                <a href="#" class="menu__list-link">ABOUT US</a>
-            </li>
-            <li class="menu__list-item animated fadeInDown menu__list-item--2" data-fancybox-close>
-                <a href="#" class="menu__list-link">expertise</a>
-            </li>
-            <li class="menu__list-item animated fadeInDown menu__list-item--3" data-fancybox-close>
-                <a href="#" class="menu__list-link">SKILLS</a>
-            </li>
-            <li class="menu__list-item animated fadeInDown menu__list-item--4" data-fancybox-close>
-                <a href="#" class="menu__list-link">PORTFOLIO</a>
-            </li>
-            <li class="menu__list-item animated fadeInDown menu__list-item--5" data-fancybox-close>
-                <a href="#" class="menu__list-link">BLOG</a>
-            </li>
-            <li class="menu__list-item animated fadeInDown menu__list-item--6" data-fancybox-close>
-                <a href="#" class="menu__list-link">Contact us</a>
-            </li>
-        </ul>
-    </div>
+    <!-- Main -->
     <main class="main">
+        <!-- About -->
         <section class="about">
             <div class="container">
                 <div class="about__inner">
@@ -225,7 +204,8 @@
                     <div class="about__author">
                         <div class="about__author-wrapper">
                             <div class="about__author-box">
-                                <div class="about__author-image" style="background-image: url(./images/about-author.jpg);">
+                                <div class="about__author-image"
+                                    style="background-image: url(./images/about-author.jpg);">
                                 </div>
                             </div>
                         </div>
@@ -239,7 +219,9 @@
                             <h4 class="about__contact-title">
                                 Location
                             </h4>
-                            <a class="about__contact-link" href="https://www.google.com/maps/place/%D4%B3%D5%B5%D5%B8%D6%82%D5%B4%D6%80%D5%AB/@40.7843231,43.770366,12z/data=!3m1!4b1!4m5!3m4!1s0x4041fb8b9b34fc9f:0x4f4bed0e45f99102!8m2!3d40.7929026!4d43.8464971" >ARMENIA , Gyumri</a>
+                            <a class="about__contact-link"
+                                href="https://www.google.com/maps/place/%D4%B3%D5%B5%D5%B8%D6%82%D5%B4%D6%80%D5%AB/@40.7843231,43.770366,12z/data=!3m1!4b1!4m5!3m4!1s0x4041fb8b9b34fc9f:0x4f4bed0e45f99102!8m2!3d40.7929026!4d43.8464971">ARMENIA
+                                , Gyumri</a>
                         </div>
                         <div class="about__contact-item">
                             <h4 class="about__contact-title">
@@ -261,7 +243,94 @@
                 </div>
             </div>
         </section>
+        <!-- Expertise -->
+        <section class="expertise">
+            <div class="container">
+                <h3 class="expertise__title title">
+                    <strong class="expertise__title-number title-number">02</strong>
+                    <span class="expertise__title-text title-text">expertise</span>
+                </h3>
+                <div class="expertise__inner">
+                    <div class="expertise__row">
+                        <div class="expertise__col">
+                            <h4 class="expertise__col-title">
+                                <span class="expertise__col-title-number">01</span>
+                                <strong class="expertise__col-title-text">ADVANCED CSS</strong>
+                            </h4>
+                            <div class="expertise__col-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text</p>
+                            </div>
+                        </div>
+                        <div class="expertise__col">
+                            <h4 class="expertise__col-title">
+                                <span class="expertise__col-title-number">02</span>
+                                <strong class="expertise__col-title-text">FRONT-END DESIGN
+                                </strong>
+                            </h4>
+                            <div class="expertise__col-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expertise__row">
+                        <div class="expertise__col">
+                            <h4 class="expertise__col-title">
+                                <span class="expertise__col-title-number">03</span>
+                                <strong class="expertise__col-title-text">RUBY ON RAILS</strong>
+                            </h4>
+                            <div class="expertise__col-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text</p>
+                            </div>
+                        </div>
+                        <div class="expertise__col">
+                            <h4 class="expertise__col-title">
+                                <span class="expertise__col-title-number">04</span>
+                                <strong class="expertise__col-title-text">OBJECT-ORIENTED PHP
+                                </strong>
+                            </h4>
+                            <div class="expertise__col-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
     </main>
+
+
+    <div class="menu animated zoomIn" id="menu">
+        <ul class="menu__list">
+            <li class="menu__list-item animated fadeInDown menu__list-item--1" data-fancybox-close>
+                <a href="#" class="menu__list-link">ABOUT US</a>
+            </li>
+            <li class="menu__list-item animated fadeInDown menu__list-item--2" data-fancybox-close>
+                <a href="#" class="menu__list-link">expertise</a>
+            </li>
+            <li class="menu__list-item animated fadeInDown menu__list-item--3" data-fancybox-close>
+                <a href="#" class="menu__list-link">SKILLS</a>
+            </li>
+            <li class="menu__list-item animated fadeInDown menu__list-item--4" data-fancybox-close>
+                <a href="#" class="menu__list-link">PORTFOLIO</a>
+            </li>
+            <li class="menu__list-item animated fadeInDown menu__list-item--5" data-fancybox-close>
+                <a href="#" class="menu__list-link">BLOG</a>
+            </li>
+            <li class="menu__list-item animated fadeInDown menu__list-item--6" data-fancybox-close>
+                <a href="#" class="menu__list-link">Contact us</a>
+            </li>
+        </ul>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/libs.min.js"></script>
     <script src="./js/main.js"></script>
