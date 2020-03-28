@@ -30,7 +30,7 @@ $(function () {
             rows: 0,   
             prevArrow: '<button type="button" class="header__pagination-arrow header__pagination-arrow--left"></button>',
             nextArrow: '<button type="button" class="header__pagination-arrow header__pagination-arrow--right"></button>',
-            // autoplay: true,
+            autoplay: true,
             pauseOnHover: false,
             autoplaySpeed: 2500,
         });

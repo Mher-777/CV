@@ -1,3 +1,4 @@
+@import "vars";
 html {
   box-sizing: border-box;
 }
@@ -43,7 +44,7 @@ select,
 option {
   outline: none;
 }
-button{
+button {
   border: none;
 }
 
@@ -54,7 +55,7 @@ img {
 body {
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #a7a7a7;
 }
 
@@ -62,11 +63,33 @@ body {
 .slick-slide * {
   outline: none !important;
 }
-.container{
+.container {
   max-width: 1530px;
   padding: 0 10px;
   margin: 0 auto;
 }
+.main {
+  background-color: #000;
+}
+.title {
+  text-align: center;
+
+  &-number {
+    color: $color-orange;
+    font-size: 72px;
+    display: block;
+    font-weight: 800;
+    line-height: 60px;
+  }
+  &-text {
+    font-weight: 600;
+    display: block;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
 // font-weight 300 light;
 // font-weight 400 regular;
 // font-weight 600 semi-bold;
