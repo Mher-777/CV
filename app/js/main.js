@@ -50,4 +50,19 @@ $(function () {
         transitionEffect: "rotate",
     })
 
+    var offsetTop = $(".skills").offset().top;
+    console.log(offsetTop);
+    $(window).scroll(function () {
+        var height = $(window).height();
+        if ($(window).scrollTop() + height > offsetTop) {
+            jQuery(".skills__bar").each(function () {
+                jQuery(this).find(".skills__bar-content").animate(
+                    {
+                        width: jQuery(this).attr("data-percentage")
+                    },
+                    2000,
+                );
+            });
+        }
+    });
 })
