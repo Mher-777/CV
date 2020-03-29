@@ -1,12 +1,12 @@
 $(function () {
-    var $slider = $('.header__slider');
+    const $slider = $('.header__slider');
 
     if ($slider.length) {
-        var currentSlide;
-        var slidesCount;
-        var sliderCounter = document.createElement('div');
+        let currentSlide;
+        let slidesCount;
+        const sliderCounter = document.createElement('div');
 
-        var updateSliderCounter = function (slick, currentIndex) {
+        const updateSliderCounter = function (slick, currentIndex) {
             currentSlide = slick.slickCurrentSlide() + 1;
             slidesCount = slick.slideCount;
             $('.header__pagination-counter').html("<strong>" + "0" + currentSlide + "</strong>" + "<sup>" + " " + "/" + "0" + slidesCount + "</sup>")
@@ -36,7 +36,7 @@ $(function () {
         });
     }
     function get_name_browser() {
-        var ua = navigator.userAgent;
+        let ua = navigator.userAgent;
         if (ua.search(/Chrome/) > 0) return 'Google Chrome';
         if (ua.search(/Firefox/) > 0) return 'Firefox';
         if (ua.search(/Opera/) > 0) return 'Opera';
@@ -44,25 +44,29 @@ $(function () {
         if (ua.search(/Trident/) > 0) return 'Internet Explorer';
         return 'Не определен';
     }
-    var browser = get_name_browser();
+    let browser = get_name_browser();
    
     $('.header__hamburger').fancybox({
         transitionEffect: "rotate",
     })
 
-    var offsetTop = $(".skills").offset().top;
-    console.log(offsetTop);
+    $('.blog__item').slice(0, 4).show();
+    $('.blog__bottom-button').on('click', function (e) {
+        e.preventDefault();
+        $('.blog__item:hidden').slice(0, 2).slideDown();
+    });
+
+    let offsetTop = $(".skills").offset().top;
     $(window).scroll(function () {
-        var height = $(window).height();
+        let height = $(window).height();
         if ($(window).scrollTop() + height > offsetTop) {
-            jQuery(".skills__bar").each(function () {
-                jQuery(this).find(".skills__bar-content").animate(
-                    {
-                        width: jQuery(this).attr("data-percentage")
-                    },
-                    2000,
-                );
+            $(".skills__bar").each(function () {
+                $(this).find(".skills__bar-content").animate({
+                        width: $(this).attr("data-percentage")
+                    }, 2000);
             });
         }
     });
+
+    
 })
