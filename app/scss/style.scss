@@ -464,7 +464,7 @@
 
   &__work {
     width: 25%;
-    
+
     &:hover {
       .portfolio__work-btn {
         transform: translate(-50%, -50%) scale(1);
@@ -479,7 +479,7 @@
     background-position: center;
     position: relative;
     font-size: 36px;
-   
+
     &::before {
       content: "";
       position: absolute;
@@ -585,6 +585,7 @@
   &__item-link {
     min-height: 480px;
     position: relative;
+    display: block;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -610,20 +611,150 @@
   }
 
   &__item-day {
-     color: #797979;
-     font-weight: 400;
-     margin-bottom: 20px;
+    color: #797979;
+    font-weight: 400;
+    margin-bottom: 20px;
   }
 
   &__item-text {
-      font-weight: 600;
-      color: #fff;
+    font-weight: 600;
+    color: #fff;
   }
-  &__bottom-button{
-
+  &__bottom {
+    margin-top: 30px;
   }
-  &__bottom{
+  &__bottom {
     text-align: center;
+  }
+}
+
+.contact {
+  &__wrapper {
+    padding: 150px 0;
+    background-image: linear-gradient(
+      -249deg,
+      #1c1c1c 0%,
+      #030303 66%,
+      #030303 100%
+    );
+    color: #fff;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      max-width: 546px;
+      width: 100%;
+      background-image: linear-gradient(
+        -177deg,
+        #1c1c1c 0%,
+        #030303 66%,
+        #030303 100%
+      );
+      height: 100%;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    max-width: 835px;
+    width: 100%;
+    margin-right: 50px;
+  }
+
+  &__content-title {
+    font-size: 23.5px;
+    font-weight: bold;
+    letter-spacing: 4.7px;
+    margin-bottom: 140px;
+  }
+
+  &__form {
+    width: 100%;
+    text-align: right;
+  }
+
+  &__form-row {
+    display: flex;
+  }
+  &__form-box-top {
+    max-width: 395px;
+    width: 100%;
+    & + & {
+      margin-left: 50px;
+    }
+  }
+
+  &__form-box {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 65px;
+    letter-spacing: 0.8px;
+    width: 100%;
+    text-align: left;
+  }
+
+  &__form-input {
+    display: block;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #464646;
+    padding-top: 55px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  &__form-textarea {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    display: block;
+    height: 170px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    margin-top: 65px;
+    color: #fff;
+    text-align: left;
+  }
+
+  &__form-btn {
+    margin-top: -30px;
+  }
+
+  &__info {
+    position: relative;
+    max-width: 323px;
+    width: 100%;
+    padding: 60px 0 100px 110px;
+  }
+
+  &__info-list {
+  }
+
+  &__info-item {
+    margin-bottom: 180px;
+  }
+
+  &__info-title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 25px;
+  }
+
+  &__info-link {
+    font-size: 30px;
+    color: $color-gray;
   }
 }
 
