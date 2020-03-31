@@ -32,7 +32,7 @@ $(function () {
             nextArrow: '<button type="button" class="header__pagination-arrow header__pagination-arrow--right"></button>',
             autoplay: true,
             pauseOnHover: false,
-            autoplaySpeed: 2500,
+            autoplaySpeed: 4000,
         });
     }
     $('.header__hamburger').fancybox({
@@ -71,4 +71,16 @@ $(function () {
         $('body').removeClass('sidebar--open');
         $('.main__hamburger').removeClass('main__hamburger--open');
     })
+
+    let offsetTopAbout = $(".about__inner").offset().top;
+     $(window).scroll(function () {
+         let height = $(window).height();
+         if ($(window).scrollTop() + height > offsetTopAbout) {
+             $('.about__author-box').addClass('about__author-box--anim')
+         }
+    });
+
+    new WOW().init({
+        offset: 50,
+    });
 })
