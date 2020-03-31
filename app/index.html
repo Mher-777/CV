@@ -44,8 +44,17 @@
                                 <a href="#" class="header__social-link">behance</a>
                             </div>
                             <div class="header__language">
-                                <button class="header__language-btn" type="button">عربي</button>
-                                <button class="header__language-btn" type="button">fr</button>
+                                <div class="header__language-icon icon-language"></div>
+                                <div class="header__language-box">
+                                    <button class="header__language-btn button-one animated zoomIn"
+                                        type="button">عربي</button>
+                                    <button class="header__language-btn button-two animated zoomIn"
+                                        type="button">fr</button>
+                                    <button class="header__language-btn button-three  animated zoomIn"
+                                        type="button">Ru</button>
+                                    <button class="header__language-btn button-four animated zoomIn"
+                                        type="button">Am</button>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -97,8 +106,13 @@
                                 <a href="#" class="header__social-link">behance</a>
                             </div>
                             <div class="header__language">
-                                <button class="header__language-btn" type="button">عربي</button>
-                                <button class="header__language-btn" type="button">fr</button>
+                                <div class="header__language-icon icon-language"></div>
+                                <div class="header__language-box">
+                                    <button class="header__language-btn button-one animated zoomIn" type="button">عربي</button>
+                                    <button class="header__language-btn button-two animated zoomIn" type="button">fr</button>
+                                    <button class="header__language-btn button-three  animated zoomIn" type="button">Ru</button>
+                                    <button class="header__language-btn button-four animated zoomIn" type="button">Am</button>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -148,9 +162,15 @@
                                 <a href="#" class="header__social-link">linkedin</a>
                                 <a href="#" class="header__social-link">behance</a>
                             </div>
+
                             <div class="header__language">
-                                <button class="header__language-btn" type="button">عربي</button>
-                                <button class="header__language-btn" type="button">fr</button>
+                                <div class="header__language-icon icon-language"></div>
+                                <div class="header__language-box">
+                                    <button class="header__language-btn button-one animated zoomIn" type="button">عربي</button>
+                                    <button class="header__language-btn button-two animated zoomIn" type="button">fr</button>
+                                    <button class="header__language-btn button-three  animated zoomIn" type="button">Ru</button>
+                                    <button class="header__language-btn button-four animated zoomIn" type="button">Am</button>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -175,11 +195,59 @@
                     <a href="#" class="header__contact-link">CONTACT</a>
                 </div>
             </div>
+            <div class="main__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="main__menu">
+            <div class="main__menu-box">
+                <ul class="main__menu-list">
+                    <li class="main__menu-item">
+                        <a href="#" class="main__menu-link">ABOUT US</a>
+                    </li>
+                    <li class="main__menu-item">
+                        <a href="#" class="main__menu-link">expertise</a>
+                    </li>
+                    <li class="main__menu-item">
+                        <a href="#" class="main__menu-link">SKILLS</a>
+                    </li>
+                    <li class="main__menu-item">
+                        <a href="#" class="main__menu-link">PORTFOLIO</a>
+                    </li>
+                    <li class="main__menu-item">
+                        <a href="#" class="main__menu-link">BLOG</a>
+                    </li>
+                    <li class="main__menu-item">
+                        <a href="#" class="main__menu-link">Contact us</a>
+                    </li>
+                </ul>
+                <div class="main__menu-wrapper">
+                    <div class="main__language">
+                        <span class="main__language-icon icon-language"></span>
+                        <div class="main__language-box">
+                            <button class="main__language-btn" type="button">عربي</button>
+                            <button class="main__language-btn" type="button">fr</button>
+                        </div>
+                    </div>
+                    <div class="main__menu-social">
+                        <a href="#" class="main__menu-icon icon-facebook"></a>
+                        <a href="#" class="main__menu-icon icon-behance"></a>
+                        <a href="#" class="main__menu-icon icon-pinterest-p"></a>
+                        <a href="#" class="main__menu-icon icon-twitter"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <!-- Main -->
+
     <main class="main">
         <!-- About -->
+
         <section class="about">
             <div class="container">
                 <div class="about__inner">
@@ -245,7 +313,9 @@
                 </div>
             </div>
         </section>
+       
         <!-- Expertise -->
+
         <section class="expertise">
             <div class="container">
                 <h3 class="expertise__title title">
@@ -308,7 +378,7 @@
         </section>
 
         <!-- Skills -->
-
+        
         <section class="skills">
             <div class="container">
                 <h3 class="skills__title title">
@@ -348,7 +418,7 @@
                             </div>
                         </div>
                     </div>
-
+        
                     <div class="skills__col">
                         <div class="skills__bar" data-percentage="75%">
                             <h5 class="skills__bar-title">Jquery</h5>
@@ -386,7 +456,7 @@
         </section>
 
         <!-- Portfolio -->
-
+        
         <section class="portfolio">
             <div class="container">
                 <h3 class="portfolio__title title">
@@ -455,7 +525,7 @@
         </section>
 
         <!-- Blog -->
-
+        
         <section class="blog">
             <div class="container">
                 <h3 class="blog__title title">
@@ -527,8 +597,10 @@
                             </div>
                         </div>
                     </div>
+                 
                     <div class="blog__item">
-                        <a class="blog__item-link" href="#" style="background-image: url(./images/blog-img01.jpg);">
+                        <a class="blog__item-link" href="#">
+                            <img class="blog__item-link-image" src="./images/blog-img01.jpg" alt="">
                             <span class="blog__item-decor">
                                 ui
                             </span>
@@ -543,7 +615,8 @@
                         </div>
                     </div>
                     <div class="blog__item">
-                        <a class="blog__item-link" href="#" style="background-image: url(./images/blog-img02.jpg);">
+                        <a class="blog__item-link" href="#">
+                            <img class="blog__item-link-image" src="./images/blog-img02.jpg" alt="">
                             <span class="blog__item-decor">
                                 ux
                             </span>
@@ -558,7 +631,8 @@
                         </div>
                     </div>
                     <div class="blog__item">
-                        <a class="blog__item-link" href="#" style="background-image: url(./images/blog-img03.jpg);">
+                        <a class="blog__item-link" href="#">
+                            <img class="blog__item-link-image" src="./images/blog-img03.jpg" alt="">
                             <span class="blog__item-decor">
                                 uX
                             </span>
@@ -573,7 +647,8 @@
                         </div>
                     </div>
                     <div class="blog__item">
-                        <a class="blog__item-link" href="#" style="background-image: url(./images/blog-img04.jpg);">
+                        <a class="blog__item-link" href="#">
+                            <img class="blog__item-link-image" src="./images/blog-img04.jpg" alt="">
                             <span class="blog__item-decor">
                                 ui
                             </span>
@@ -597,7 +672,7 @@
         </section>
 
         <!-- Contact Us -->
-
+        
         <section class="contact">
             <div class="contact__wrapper">
                 <div class="container">
@@ -642,8 +717,7 @@
                                 </li>
                                 <li class="contact__info-item">
                                     <h4 class="contact__info-title">Email</h4>
-                                    <a class="contact__info-link"
-                                        href="mailto:mherjan2003@mail.ru">mherjan2003@mail.ru</a>
+                                    <a class="contact__info-link" href="mailto:mherjan2003@mail.ru">mherjan2003@mail.ru</a>
                                 </li>
                             </ul>
                         </div>
@@ -653,7 +727,7 @@
         </section>
 
         <!-- Footer -->
-
+        
         <footer class="footer">
             <div class="footer__wrapper">
                 <div class="container">

@@ -55,11 +55,16 @@
     height: 30px;
     cursor: pointer;
     margin-bottom: 260px;
+        margin-left: auto;
+    margin-right: auto;
     &:hover {
       .header__hamburger-ellipse {
         background-color: $color-orange;
       }
     }
+  }
+  &__language-icon{
+    display: none;
   }
   &__hamburger-row {
     display: flex;
@@ -197,6 +202,8 @@
   }
   &__pagination {
     display: inline-block;
+    position: absolute;
+    top: 680px;
   }
   &__pagination-counter {
     display: inline-block;
@@ -794,7 +801,6 @@
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 5.95px;
-    vertical-align: auto;
   }
 
   &__copyright-icon {
@@ -818,5 +824,10 @@
     }
   }
 }
-
+.main__hamburger{
+  display: none;
+}
+// main{
+//   display: none;
+// }
 @import "media";
