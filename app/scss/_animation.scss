@@ -55,10 +55,18 @@
     transform: translateY(-60px) translateX(85px);
   }
 }
+@keyframes anim-author-mobile {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-35px) translateX(35px);
+  }
+}
 .about__author-box {
   &--anim {
     animation-name: anim-author;
     animation-duration: 1s;
-        animation-fill-mode: both;
+    animation-fill-mode: both;
   }
 }
